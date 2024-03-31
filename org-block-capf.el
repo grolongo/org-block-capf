@@ -34,6 +34,13 @@
 (require 'org-element)
 (require 'seq)
 
+(defgroup org-block-capf nil
+  "Org block `completion-at-point' function."
+  :link '(url-link :tag "Homepage" "https://github.com/xenodium/org-block-capf")
+  :group 'convenience
+  :group 'text
+  :prefix "org-")
+
 (defcustom org-block-capf-complete-at-bol t
   "If t, detect completion only at the beginning of lines."
   :type 'boolean)
